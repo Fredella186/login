@@ -2,8 +2,9 @@
 include "connection.php";
 
 session_start();
-
-$idk = $_POST['id'];
+$id = $_SESSION['id'];
+$getData = mysqli_query ($conn, "select * from siswa where id='$id'");
+$row = mysqli_fetch_assoc($getData);
 $names = mysqli_real_escape_string($conn, $_POST['name']);
 $addresss = mysqli_real_escape_string($conn, $_POST['address']);
 $telps = $_POST['telp'];
@@ -15,7 +16,7 @@ $genders = $_POST['gender'];
 $idkSession = isset($_SESSION['email']) ? $_SESSION['email'] : "";
 $idkSession = mysqli_real_escape_string($conn, $idkSession);
 
-$sql = "UPDATE siswa SET namaLengkap='$names', alamat='$addresss', alamatEmail='$emails', nomorTelepon='$telps', password='$passwords', gender='$genders' WHERE id='$idk'";
+$sql = "UPDATE siswa SET namaLengkap='$names', alamat='$addresss', alamatEmail='$emails', nomorTelepon='$telps', password='$passwords', gender='$genders' WHERE id='$id'";
 mysqli_query($conn, $sql);
 
 $url = "profil.php";

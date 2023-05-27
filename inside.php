@@ -1,9 +1,9 @@
 <?php
 session_start();
 include "connection.php";
-$idproduk = isset($_GET['id'])?$_GET['id']:"";
-$idproduk = mysqli_real_escape_string($conn,$idproduk);
-$sql = "SELECT * FROM siswa WHERE id='$idproduk' ";
+$id = isset($_GET['id'])?$_GET['id']:"";
+$id= mysqli_real_escape_string($conn,$id);
+$sql = "SELECT * FROM siswa WHERE id='$id' ";
 $query = mysqli_query($conn,$sql);
 $data = mysqli_fetch_array($query);
 

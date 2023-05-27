@@ -48,13 +48,13 @@ require_once "connection.php";
                         ?>
                         <script>
                             alert("Registration Succsed");
+                            location.href = "profil.php";
                         </script>
                         <?php
-                        header("Refresh:2 url=profil.php");
                     }
                 }
             }
-            echo $names;     
+             
     ?>
         <div class="mainForm">
     <h2>Form Pendaftaran Siswa Baru</h2>
@@ -91,7 +91,7 @@ require_once "connection.php";
             <input type="radio"  name="genders" value="laki_laki"  required>
             <label for="laki_laki">Laki-Laki</label>
             <span class="error"> </span><br><br>
-            <input type="submit" name="submit" onclick="window.location.href= 'inside.php';">
+            <input type="submit" name="submit" >
         </form>
         </div>
     </body>
