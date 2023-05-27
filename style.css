@@ -1,0 +1,87 @@
+body{
+    margin:130px 20px;
+    background-color: #ebe2ff;
+}
+.main_login{
+    display: flex;
+    width: 100%;
+}
+.gambar{
+    width: 50%;
+    margin-left: 60px;
+}
+.form{
+    width: 50%;
+}
+.text_login{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.google_login a img{
+    display: flex;
+    justify-content: center;
+    padding-left:100px;
+}
+.login{
+    margin-left: 190px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+.input{
+    width: 80%;
+    height: 35px;
+    border:2px solid white;
+    border-radius: 5px;
+}
+input:hover{
+    width: 85%;
+    height: 40px;
+    margin-right: 50px;
+}
+input:active{
+    width: 85%;
+    height: 40px;
+    margin-right: 50px;
+}
+.submit{
+    margin-left: 70px;
+    width: 40%;
+    height: 35px;
+    border:2px solid #8a60f4;
+    border-radius: 5px;
+    background-color: #8a60f4;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.submit:hover{
+    margin-left:60px ;
+    border-color:#8a60f4 ;
+    width: 44%;
+    height: 38px;
+}
+.account{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.google{
+    margin-left :70px;
+}
+.google_button{
+    margin-left: 120px;
+    width: 45%;
+    height: 35px;
+    border:2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
