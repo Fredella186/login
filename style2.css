@@ -58,10 +58,14 @@ input[type=email]{
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
 }
 .submit:hover{
     margin-left:60px ;
     border-color:#8a60f4 ;
     width: 44%;
     height: 38px;
+}
+.submit:last-child{
+    text-decoration: none;
 }

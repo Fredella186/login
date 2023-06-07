@@ -31,7 +31,7 @@ $data = mysqli_fetch_array($query);
                 <span class="error"> </span>
                 <input type="password" name="password" id="password" placeholder="Password" class="input"><br><br>
                 <span class="error"> </span>
-                <input type="submit" name="submit" id="submit" class="submit"    onclick="window.location.href= 'inside.php'"; >
+                <input type="submit" name="submit" id="submit" class="submit"    onclick="window.location.href= 'profil.php'"; >
                 </div>
             </form>
             <?php

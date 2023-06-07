@@ -7,6 +7,10 @@ $sql = "SELECT * FROM siswa WHERE id='$id' ";
 $query = mysqli_query($conn,$sql);
 $data = mysqli_fetch_array($query);
 
+$id = $_SESSION['id'];
+$getData = mysqli_query ($conn, "select * from siswa where id='$id'");
+$row = mysqli_fetch_assoc($getData);
+
 ?>
 <html>
     <body>

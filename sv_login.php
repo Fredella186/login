@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
                 // Password matches
                 // Perform actions after successful login
                 // Example: Redirect the user to the home page
-                header("Location: profil.php");
+                header("Location: inside.php");
                 
             } else {
                 // Incorrect password

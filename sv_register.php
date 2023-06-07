@@ -23,6 +23,7 @@ if ($passwords != $passwords2){
     </script>
     <?php
     header("Refresh:0.1; url=register.php");
+    exit;
 
 }else{
     if ($num > 0){
@@ -32,6 +33,7 @@ if ($passwords != $passwords2){
         </script>
         <?php
         header("Refresh:2 url=register.php");
+        exit;
     
     }else{
         $sql_insert = "INSERT INTO siswa(namaLengkap,alamat,alamatEmail,nomorTelepon,password,gender) 
@@ -43,9 +45,10 @@ if ($passwords != $passwords2){
         ?>
         <script>
             alert("Registration Succsed");
+            location.href="inside.php";
         </script>
         <?php
-        header("Refresh:2 url=inside.php");
+        exit;
     }
 }
 ?>
