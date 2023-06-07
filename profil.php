@@ -17,7 +17,6 @@ $row = mysqli_fetch_assoc($getData);
         <h2>Edit Profil</h2>
         <form method="post" action="update.php" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?php echo isset($row['id']) ? $row['id'] : ''; ?>">
-            <img src="<?=$row['foto'];?>" alt="Foto Profil">
             <input type="text" name="name" placeholder="Nama Lengkap" class="form" required value="<?php echo isset($row['namaLengkap']) ? $row['namaLengkap'] : ''; ?>">
             <br>
             <input type="text" name="address" placeholder="Alamat Tempat Tinggal" class="form" required value="<?php echo isset($row['alamat']) ? $row['alamat'] : ''; ?>">
